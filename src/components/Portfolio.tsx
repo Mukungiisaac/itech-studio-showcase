@@ -109,11 +109,18 @@ const Portfolio = () => {
                           alt={item.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-                          <div className="flex items-center gap-2 text-accent-foreground bg-accent px-4 py-2 rounded-full">
-                            <span className="text-sm font-semibold">View Case Study</span>
-                            <ExternalLink className="h-4 w-4" />
-                          </div>
+                        <div className="absolute inset-0 bg-background/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-6 space-y-3">
+                          <Badge variant="secondary" className="w-fit">{item.category}</Badge>
+                          <h3 className="text-xl font-bold">{item.title}</h3>
+                          <p className="text-sm text-muted-foreground">
+                            <span className="font-semibold text-foreground">Tools:</span> {item.tools.join(", ")}
+                          </p>
+                          <p className="text-sm text-muted-foreground">
+                            <span className="font-semibold text-foreground">Challenge:</span> {item.challenge}
+                          </p>
+                          <p className="text-sm text-accent font-semibold">
+                            ✓ {item.result}
+                          </p>
                         </div>
                       </div>
                       <div className="p-6 space-y-4">
