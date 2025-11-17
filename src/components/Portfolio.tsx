@@ -110,7 +110,7 @@ const Portfolio = () => {
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-                          <div className="flex items-center gap-2 text-primary-foreground bg-primary px-4 py-2 rounded-full">
+                          <div className="flex items-center gap-2 text-accent-foreground bg-accent px-4 py-2 rounded-full">
                             <span className="text-sm font-semibold">View Case Study</span>
                             <ExternalLink className="h-4 w-4" />
                           </div>
@@ -129,7 +129,7 @@ const Portfolio = () => {
                           <p className="text-muted-foreground">
                             <span className="font-semibold text-foreground">Challenge:</span> {item.challenge}
                           </p>
-                          <p className="text-primary font-semibold">
+                          <p className="text-accent font-semibold">
                             ✓ {item.result}
                           </p>
                         </div>

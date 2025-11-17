@@ -51,8 +51,8 @@ const Contact = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />
+                <div className="p-3 rounded-lg bg-accent/10">
+                  <Mail className="h-6 w-6 text-accent" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Email</h3>
@@ -61,8 +61,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />
+                <div className="p-3 rounded-lg bg-accent/10">
+                  <Phone className="h-6 w-6 text-accent" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Phone</h3>
@@ -77,7 +77,7 @@ const Contact = () => {
                     href="https://linkedin.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="p-3 rounded-lg bg-primary/10 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                    className="p-3 rounded-lg bg-accent/10 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
                   >
                     <Linkedin className="h-5 w-5" />
                   </a>
@@ -85,7 +85,7 @@ const Contact = () => {
                     href="https://twitter.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="p-3 rounded-lg bg-primary/10 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                    className="p-3 rounded-lg bg-accent/10 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
                   >
                     <Twitter className="h-5 w-5" />
                   </a>
@@ -93,7 +93,7 @@ const Contact = () => {
                     href="https://github.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="p-3 rounded-lg bg-primary/10 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                    className="p-3 rounded-lg bg-accent/10 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
                   >
                     <Github className="h-5 w-5" />
                   </a>

@@ -51,7 +51,7 @@ const Hero = () => {
             <div className="pt-4">
               <Button 
                 size="lg" 
-                className="hero-cta text-base px-10 py-6 text-primary-foreground font-semibold"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-10 py-6 font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={() => scrollToSection("portfolio")}
               >
                 Discover

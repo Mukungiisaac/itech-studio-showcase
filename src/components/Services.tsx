@@ -54,15 +54,15 @@ const Services = () => {
                 className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl group"
               >
                 <CardContent className="pt-8 pb-8 space-y-4">
-                  <div className="inline-flex p-4 rounded-2xl bg-primary/10 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                    <Icon className="h-8 w-8 text-primary group-hover:text-primary-foreground transition-colors" />
+                  <div className="inline-flex p-4 rounded-2xl bg-accent/10 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
+                    <Icon className="h-8 w-8 text-accent group-hover:text-accent-foreground transition-colors" />
                   </div>
                   <h3 className="text-2xl font-bold">{service.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
                   <div className="pt-2 border-t border-border/50">
-                    <p className="text-sm font-semibold text-primary">
+                    <p className="text-sm font-semibold text-accent">
                       {service.value}
                     </p>
                   </div>
