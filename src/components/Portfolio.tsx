@@ -77,13 +77,6 @@ const portfolioItems = {
 };
 
 const Portfolio = () => {
-  const featuredItems = [
-    portfolioItems.software[0], // iTechMarketplace - top
-    portfolioItems.design[0], // Confusion campaign - right
-    portfolioItems.marketing[0], // Social media - bottom
-    portfolioItems.design[1], // Doctor poster - left
-  ];
-
   return (
     <section id="portfolio" className="py-24 px-6 bg-muted/30">
       <div className="max-w-7xl mx-auto">
@@ -94,105 +87,23 @@ const Portfolio = () => {
           </p>
         </div>
 
-        {/* Diamond Layout */}
-        <div className="max-w-4xl mx-auto mb-20">
-          <div className="relative aspect-square max-w-2xl mx-auto">
-            {/* Center Circle */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-primary flex items-center justify-center shadow-2xl">
-                <div className="text-center">
-                  <p className="text-primary-foreground font-bold text-lg md:text-xl">iTech</p>
-                  <p className="text-primary-foreground font-bold text-lg md:text-xl">Studio</p>
-                </div>
-              </div>
-            </div>
+        <Tabs defaultValue="design" className="w-full">
+          <TabsList className="grid w-full max-w-xl mx-auto grid-cols-3 mb-12 h-14">
+            <TabsTrigger value="design" className="text-base">Design</TabsTrigger>
+            <TabsTrigger value="marketing" className="text-base">Marketing</TabsTrigger>
+            <TabsTrigger value="software" className="text-base">Software</TabsTrigger>
+          </TabsList>
 
-            {/* Top */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 md:w-56 group">
-              <div className="relative overflow-hidden rounded-lg shadow-lg bg-card border-4 border-background">
-                <img 
-                  src={featuredItems[0].image} 
-                  alt={featuredItems[0].title}
-                  className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/95 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                  <div className="text-center space-y-1 px-2">
-                    <Badge variant="secondary" className="mb-1 text-xs">{featuredItems[0].category}</Badge>
-                    <p className="text-sm font-bold text-foreground">{featuredItems[0].title}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right */}
-            <div className="absolute top-1/2 right-0 -translate-y-1/2 w-48 md:w-56 group">
-              <div className="relative overflow-hidden rounded-lg shadow-lg bg-card border-4 border-background">
-                <img 
-                  src={featuredItems[1].image} 
-                  alt={featuredItems[1].title}
-                  className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/95 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                  <div className="text-center space-y-1 px-2">
-                    <Badge variant="secondary" className="mb-1 text-xs">{featuredItems[1].category}</Badge>
-                    <p className="text-sm font-bold text-foreground">{featuredItems[1].title}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-48 md:w-56 group">
-              <div className="relative overflow-hidden rounded-lg shadow-lg bg-card border-4 border-background">
-                <img 
-                  src={featuredItems[2].image} 
-                  alt={featuredItems[2].title}
-                  className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/95 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                  <div className="text-center space-y-1 px-2">
-                    <Badge variant="secondary" className="mb-1 text-xs">{featuredItems[2].category}</Badge>
-                    <p className="text-sm font-bold text-foreground">{featuredItems[2].title}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Left */}
-            <div className="absolute top-1/2 left-0 -translate-y-1/2 w-48 md:w-56 group">
-              <div className="relative overflow-hidden rounded-lg shadow-lg bg-card border-4 border-background">
-                <img 
-                  src={featuredItems[3].image} 
-                  alt={featuredItems[3].title}
-                  className="w-full aspect-[4/3] object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/95 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                  <div className="text-center space-y-1 px-2">
-                    <Badge variant="secondary" className="mb-1 text-xs">{featuredItems[3].category}</Badge>
-                    <p className="text-sm font-bold text-foreground">{featuredItems[3].title}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* All Portfolio Grid */}
-        <div className="mt-20">
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">All Projects</h3>
-          <Tabs defaultValue="design" className="w-full">
-            <TabsList className="grid w-full max-w-xl mx-auto grid-cols-3 mb-12 h-14">
-              <TabsTrigger value="design" className="text-base">Design</TabsTrigger>
-              <TabsTrigger value="marketing" className="text-base">Marketing</TabsTrigger>
-              <TabsTrigger value="software" className="text-base">Software</TabsTrigger>
-            </TabsList>
-
-            {Object.entries(portfolioItems).map(([category, items]) => (
-              <TabsContent key={category} value={category}>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {items.map((item, index) => (
-                    <Card key={index} className="group overflow-hidden border-2 hover:border-primary/50 transition-all duration-300">
-                      <div className="relative aspect-video overflow-hidden">
+          {Object.entries(portfolioItems).map(([key, items]) => (
+            <TabsContent key={key} value={key} className="mt-0">
+              <div className="grid md:grid-cols-2 gap-8">
+                {items.map((item, index) => (
+                  <Card 
+                    key={index} 
+                    className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary group"
+                  >
+                    <CardContent className="p-0">
+                      <div className="relative aspect-video overflow-hidden bg-muted">
                         <img 
                           src={item.image} 
                           alt={item.title}
@@ -205,28 +116,31 @@ const Portfolio = () => {
                           </div>
                         </div>
                       </div>
-                      <CardContent className="pt-6 pb-6 space-y-3">
-                        <div>
-                          <h3 className="font-bold text-lg mb-2 flex items-center gap-2">
-                            {item.title}
-                            <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                          </h3>
-                          <Badge variant="outline" className="mb-3">{item.category}</Badge>
+                      <div className="p-6 space-y-4">
+                        <div className="space-y-2">
+                          <Badge variant="secondary" className="mb-2">{item.category}</Badge>
+                          <h3 className="text-2xl font-bold">{item.title}</h3>
                         </div>
                         
-                        <div className="text-sm space-y-2">
-                          <p><span className="font-semibold text-primary">Tools:</span> {item.tools.join(", ")}</p>
-                          <p><span className="font-semibold text-primary">Challenge:</span> {item.challenge}</p>
-                          <p className="text-accent font-semibold">✓ {item.result}</p>
+                        <div className="space-y-2 text-sm">
+                          <p className="text-muted-foreground">
+                            <span className="font-semibold text-foreground">Tools:</span> {item.tools.join(", ")}
+                          </p>
+                          <p className="text-muted-foreground">
+                            <span className="font-semibold text-foreground">Challenge:</span> {item.challenge}
+                          </p>
+                          <p className="text-accent font-semibold">
+                            ✓ {item.result}
+                          </p>
                         </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </TabsContent>
-            ))}
-          </Tabs>
-        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+          ))}
+        </Tabs>
       </div>
     </section>
   );
