@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-24 px-6 bg-muted/30">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Create Something Amazing</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Have a project in mind? Let's discuss how we can bring your vision to life
@@ -22,7 +22,7 @@ const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <Card className="border-2">
+          <Card className="border-2 animate-slide-right opacity-0">
             <CardContent className="pt-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -48,9 +48,9 @@ const Contact = () => {
             </CardContent>
           </Card>
 
-          <div className="space-y-8">
+          <div className="space-y-8 animate-slide-left opacity-0" style={{ animationDelay: "0.2s" }}>
             <div className="space-y-6">
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 animate-slide-up opacity-0" style={{ animationDelay: "0.3s" }}>
                 <div className="p-3 rounded-lg bg-accent/10">
                   <Mail className="h-6 w-6 text-accent" />
                 </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 animate-slide-up opacity-0" style={{ animationDelay: "0.4s" }}>
                 <div className="p-3 rounded-lg bg-accent/10">
                   <Phone className="h-6 w-6 text-accent" />
                 </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="pt-6">
+              <div className="pt-6 animate-slide-up opacity-0" style={{ animationDelay: "0.5s" }}>
                 <h3 className="font-semibold text-lg mb-4">Connect With Me</h3>
                 <div className="flex gap-3">
                   <a 

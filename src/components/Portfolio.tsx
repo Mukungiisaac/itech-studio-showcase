@@ -80,14 +80,14 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="py-24 px-6 bg-muted/30">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Portfolio</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Real projects, real results, real impact
           </p>
         </div>
 
-        <Tabs defaultValue="design" className="w-full">
+        <Tabs defaultValue="design" className="w-full animate-slide-up opacity-0" style={{ animationDelay: "0.2s" }}>
           <TabsList className="grid w-full max-w-xl mx-auto grid-cols-3 mb-12 h-14">
             <TabsTrigger value="design" className="text-base">Design</TabsTrigger>
             <TabsTrigger value="marketing" className="text-base">Marketing</TabsTrigger>
@@ -100,7 +100,8 @@ const Portfolio = () => {
                 {items.map((item, index) => (
                   <Card 
                     key={index} 
-                    className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary group"
+                    className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary group animate-scale-in opacity-0"
+                    style={{ animationDelay: `${index * 0.15}s` }}
                   >
                     <CardContent className="p-0">
                       <div className="relative aspect-video overflow-hidden bg-muted">

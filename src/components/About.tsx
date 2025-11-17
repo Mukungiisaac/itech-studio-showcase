@@ -15,7 +15,7 @@ const About = () => {
 
         {/* Main About Section - Side by Side Layout */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl animate-slide-right opacity-0">
             <img 
               src={photo1} 
               alt="Isaac Mukungi - Professional Content Creator" 
@@ -23,7 +23,7 @@ const About = () => {
             />
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 animate-slide-left opacity-0" style={{ animationDelay: "0.2s" }}>
             <div className="space-y-2">
               <p className="text-accent font-semibold">Who I Am</p>
               <h3 className="text-3xl md:text-4xl font-bold">
@@ -84,7 +84,7 @@ const About = () => {
 
         {/* Second Photo Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 order-2 md:order-1">
+          <div className="space-y-6 order-2 md:order-1 animate-slide-right opacity-0" style={{ animationDelay: "0.1s" }}>
             <div className="space-y-2">
               <h3 className="text-3xl md:text-4xl font-bold">
                 My <span className="text-primary">Philosophy</span>
@@ -96,7 +96,7 @@ const About = () => {
             </p>
 
             <div className="grid grid-cols-1 gap-6 pt-4">
-              <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-lg border border-primary/20">
+              <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-lg border border-primary/20 animate-slide-up opacity-0" style={{ animationDelay: "0.3s" }}>
                 <div className="bg-primary text-white p-3 rounded-lg shrink-0">
                   <Code2 className="h-5 w-5" />
                 </div>
@@ -108,7 +108,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-accent/5 rounded-lg border border-accent/20">
+              <div className="flex items-start gap-4 p-4 bg-accent/5 rounded-lg border border-accent/20 animate-slide-up opacity-0" style={{ animationDelay: "0.4s" }}>
                 <div className="bg-accent text-white p-3 rounded-lg shrink-0">
                   <Lightbulb className="h-5 w-5" />
                 </div>
@@ -120,7 +120,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-lg border border-primary/20">
+              <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-lg border border-primary/20 animate-slide-up opacity-0" style={{ animationDelay: "0.5s" }}>
                 <div className="bg-primary text-white p-3 rounded-lg shrink-0">
                   <Heart className="h-5 w-5" />
                 </div>
@@ -134,7 +134,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl order-1 md:order-2">
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl order-1 md:order-2 animate-slide-left opacity-0" style={{ animationDelay: "0.2s" }}>
             <img 
               src={photo2} 
               alt="Isaac Mukungi - Creative Professional" 
