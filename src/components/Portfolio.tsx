@@ -59,11 +59,11 @@ const portfolioItems = {
   software: [
     { 
       image: software1, 
-      title: "FinTrack Mobile App", 
-      category: "iOS/Android App",
-      tools: ["React Native", "Node.js", "Firebase"],
-      challenge: "Build a finance tracking app with real-time sync and intuitive UX",
-      result: "10K+ downloads in first month, 4.8★ rating, featured by Apple"
+      title: "iTechMarketplace", 
+      category: "E-Commerce Platform",
+      tools: ["React", "Python Backend", "PostgreSQL"],
+      challenge: "Build a marketplace platform where sellers can advertise their products and customers can discover and purchase them seamlessly",
+      result: "Empowered 100+ local sellers, facilitated thousands of transactions, created thriving digital marketplace"
     },
     { 
       image: software2, 
