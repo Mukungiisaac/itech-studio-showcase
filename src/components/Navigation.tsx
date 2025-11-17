@@ -26,7 +26,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="p-2 border-2 border-primary rounded-full">
+            <div className="p-2 border-2 border-primary rounded-full animate-rotate-pulse">
               <img src={logo} alt="iTech Studio" className="h-6 w-auto" />
             </div>
             <span className="font-bold text-lg">
