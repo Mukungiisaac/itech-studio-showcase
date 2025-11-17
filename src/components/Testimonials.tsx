@@ -1,17 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
-import sarahJohnson from "@/assets/testimonials/sarah-johnson.jpg";
+import bruceFaraday from "@/assets/testimonials/bruce-faraday.jpg";
 import michaelChen from "@/assets/testimonials/michael-chen.jpg";
 import emilyRodriguez from "@/assets/testimonials/emily-rodriguez.jpg";
 import davidOmondi from "@/assets/testimonials/david-omondi.jpg";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "CEO, TechStart Inc.",
+    name: "Bruce Faraday",
+    role: "Bcore Marketing Pro",
     content: "Isaac delivered a complete brand identity and web platform that exceeded our expectations. His ability to understand our vision and translate it into reality was remarkable. Professional, creative, and always on time.",
     rating: 5,
-    image: sarahJohnson,
+    image: bruceFaraday,
   },
   {
     name: "Michael Chen",
