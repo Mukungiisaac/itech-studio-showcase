@@ -25,8 +25,11 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <img src={logo} alt="Isaac Mukungi" className="h-10 w-auto" />
+          <div className="flex items-center gap-3">
+            <div className="p-2 border-2 border-primary rounded-full">
+              <img src={logo} alt="iTech Studio" className="h-6 w-auto" />
+            </div>
+            <span className="text-primary font-bold text-lg">iTech Studio</span>
           </div>
 
           {/* Desktop Navigation */}
