@@ -14,6 +14,7 @@ import contentSinging from "@/assets/portfolio/content-singing.jpg";
 import contentStudio from "@/assets/portfolio/content-studio.jpg";
 import eventMcee from "@/assets/event-mcee.jpg";
 import eventMceeCreativity from "@/assets/event-mcee-creativity.jpg";
+import actorCU from "@/assets/portfolio/actor-cu.jpg";
 
 const portfolioItems = {
   design: [
@@ -94,6 +95,14 @@ const portfolioItems = {
       tools: ["Professional Microphone", "Audio Interface", "Editing Software"],
       challenge: "Produce compelling content that resonates with target audiences across multiple platforms",
       result: "Built consistent content library, increased audience engagement and brand presence"
+    },
+    { 
+      image: actorCU, 
+      title: "Stage Acting - Kisii University Christian Union", 
+      category: "Theater Performance",
+      tools: ["Stage Presence", "Character Development", "Script Interpretation"],
+      challenge: "Deliver a compelling performance that conveys spiritual messages while entertaining the audience",
+      result: "Successfully performed with strong audience connection, received positive feedback for authentic character portrayal"
     },
   ],
   eventmc: [
