@@ -8,7 +8,7 @@ import doctorPoster from "@/assets/portfolio/doctor-poster.png";
 import advertisePoster from "@/assets/portfolio/advertise-poster.png";
 import socialPoster from "@/assets/portfolio/social-media-poster.png";
 import novemberPoster from "@/assets/portfolio/november-poster.png";
-import software1 from "@/assets/portfolio/software-1.jpg";
+import itechmarketplace from "@/assets/portfolio/itechmarketplace.png";
 import software2 from "@/assets/portfolio/software-2.jpg";
 
 const portfolioItems = {
@@ -58,8 +58,8 @@ const portfolioItems = {
   ],
   software: [
     { 
-      image: software1, 
-      title: "iTechMarketplace", 
+      image: itechmarketplace, 
+      title: "iTechMarketplace",
       category: "E-Commerce Platform",
       tools: ["React", "Python Backend", "PostgreSQL"],
       challenge: "Build a marketplace platform where sellers can advertise their products and customers can discover and purchase them seamlessly",
