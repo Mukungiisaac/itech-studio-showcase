@@ -106,6 +106,10 @@ export default {
           "70%": { transform: "scale(0.9)" },
           "100%": { opacity: "1", transform: "scale(1)" },
         },
+        rotatePulse: {
+          "0%, 100%": { transform: "rotate(0deg) scale(1)" },
+          "50%": { transform: "rotate(180deg) scale(1.1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -116,6 +120,7 @@ export default {
         "slide-right": "slideRight 0.6s ease-out forwards",
         "scale-in": "scaleIn 0.5s ease-out forwards",
         "bounce-in": "bounceIn 0.8s ease-out forwards",
+        "rotate-pulse": "rotatePulse 3s ease-in-out infinite",
       },
     },
   },
