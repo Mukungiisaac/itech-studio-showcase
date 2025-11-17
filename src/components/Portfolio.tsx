@@ -167,10 +167,10 @@ const Portfolio = () => {
                         
                         <div className="space-y-2 text-sm">
                           <p className="text-muted-foreground">
-                            <span className="font-semibold text-foreground">Tools:</span> {item.tools.join(", ")}
+                            <span className="font-semibold text-foreground">{key === 'eventmc' ? 'Key Skills:' : 'Tools:'}</span> {item.tools.join(", ")}
                           </p>
                           <p className="text-muted-foreground">
-                            <span className="font-semibold text-foreground">Challenge:</span> {item.challenge}
+                            <span className="font-semibold text-foreground">{key === 'eventmc' ? 'Event Scope:' : 'Challenge:'}</span> {item.challenge}
                           </p>
                           <p className="text-accent font-semibold">
                             ✓ {item.result}
