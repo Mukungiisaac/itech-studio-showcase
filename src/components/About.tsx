@@ -42,7 +42,7 @@ const About = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-muted-foreground">Cutting-edge equipment and facilities</p>
+                <p className="text-muted-foreground">Full-stack development and software engineering</p>
               </div>
 
               <div className="flex items-start gap-3">
@@ -51,7 +51,7 @@ const About = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-muted-foreground">Experienced production team</p>
+                <p className="text-muted-foreground">Video editing and motion graphics</p>
               </div>
 
               <div className="flex items-start gap-3">
@@ -60,7 +60,7 @@ const About = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-muted-foreground">Flexible studio spaces</p>
+                <p className="text-muted-foreground">Brand design and social media content</p>
               </div>
 
               <div className="flex items-start gap-3">
@@ -69,7 +69,7 @@ const About = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-muted-foreground">Customized solutions for every project</p>
+                <p className="text-muted-foreground">Creative strategy and digital marketing</p>
               </div>
             </div>
 
