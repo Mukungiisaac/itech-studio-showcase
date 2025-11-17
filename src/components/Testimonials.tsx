@@ -1,5 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import sarahJohnson from "@/assets/testimonials/sarah-johnson.jpg";
+import michaelChen from "@/assets/testimonials/michael-chen.jpg";
+import emilyRodriguez from "@/assets/testimonials/emily-rodriguez.jpg";
+import davidOmondi from "@/assets/testimonials/david-omondi.jpg";
 
 const testimonials = [
   {
@@ -7,24 +11,28 @@ const testimonials = [
     role: "CEO, TechStart Inc.",
     content: "Isaac delivered a complete brand identity and web platform that exceeded our expectations. His ability to understand our vision and translate it into reality was remarkable. Professional, creative, and always on time.",
     rating: 5,
+    image: sarahJohnson,
   },
   {
     name: "Michael Chen",
     role: "Marketing Director, GrowthCo",
     content: "Working with Izooh on our digital marketing campaigns was a game-changer. The social media strategy he crafted tripled our engagement and the content he created consistently went viral. Highly recommend!",
     rating: 5,
+    image: michaelChen,
   },
   {
     name: "Emily Rodriguez",
     role: "Founder, CreativeHub",
     content: "Isaac's video editing skills are top-notch. He took our raw footage and turned it into a cinematic masterpiece that perfectly captured our brand story. The attention to detail and creative vision is unmatched.",
     rating: 5,
+    image: emilyRodriguez,
   },
   {
     name: "David Omondi",
     role: "Product Manager, AppVentures",
     content: "As a software engineer, Isaac built our mobile app from scratch with clean, scalable code. He's not just technically skilled—he understands user experience and design. A true full-stack creative professional.",
     rating: 5,
+    image: davidOmondi,
   },
 ];
 
@@ -47,6 +55,18 @@ const Testimonials = () => {
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <CardContent className="pt-8 pb-8 space-y-4">
+                <div className="flex items-center gap-4 mb-4">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full object-cover border-2 border-primary"
+                  />
+                  <div className="flex-1">
+                    <p className="font-semibold text-foreground">{testimonial.name}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  </div>
+                </div>
+
                 <div className="flex gap-1">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
                     <Star key={i} className="h-5 w-5 fill-primary text-primary" />
@@ -56,11 +76,6 @@ const Testimonials = () => {
                 <p className="text-muted-foreground leading-relaxed italic">
                   "{testimonial.content}"
                 </p>
-                
-                <div className="pt-4 border-t border-border/50">
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                </div>
               </CardContent>
             </Card>
           ))}
