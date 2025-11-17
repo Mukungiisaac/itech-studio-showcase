@@ -7,18 +7,18 @@ import davidOmondi from "@/assets/testimonials/david-omondi.jpg";
 
 const testimonials = [
   {
-    name: "Bruce Faraday",
-    role: "Bcore Marketing Pro",
-    content: "Isaac delivered a complete brand identity and web platform that exceeded our expectations. His ability to understand our vision and translate it into reality was remarkable. Professional, creative, and always on time.",
-    rating: 5,
-    image: bruceFaraday,
-  },
-  {
     name: "Michael Chen",
     role: "Marketing Director, GrowthCo",
     content: "Working with Izooh on our digital marketing campaigns was a game-changer. The social media strategy he crafted tripled our engagement and the content he created consistently went viral. Highly recommend!",
     rating: 5,
     image: michaelChen,
+  },
+  {
+    name: "Bruce Faraday",
+    role: "Bcore Marketing Pro",
+    content: "Isaac's marketing expertise transformed our brand visibility. His strategic campaigns and creative content drove exceptional results, increasing our reach by 200%. A true marketing professional who delivers measurable impact.",
+    rating: 5,
+    image: bruceFaraday,
   },
   {
     name: "Emily Rodriguez",
