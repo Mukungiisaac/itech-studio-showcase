@@ -36,15 +36,8 @@ const Admin = () => {
       return;
     }
 
-    // Check if user has admin role
-    const { data: roleData } = await supabase
-      .from('user_roles')
-      .select('role')
-      .eq('user_id', session.user.id)
-      .eq('role', 'admin')
-      .single();
-
-    if (!roleData) {
+    // Check if user email matches the admin email
+    if (session.user.email !== 'itechstudios86@gmail.com') {
       toast({
         title: "Access Denied",
         description: "You don't have admin privileges.",
