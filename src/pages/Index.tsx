@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -16,14 +17,7 @@ const Index = () => {
       <Portfolio />
       <Testimonials />
       <Contact />
-      
-      <footer className="py-8 px-6 bg-foreground text-background">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-sm">
-            © 2025 iTech Studio. All rights reserved. Built with passion and precision.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
