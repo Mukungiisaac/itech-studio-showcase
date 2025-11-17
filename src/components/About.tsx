@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Code2, Lightbulb, Heart } from "lucide-react";
+import photo1 from "@/assets/isaac-photo-1.png";
+import photo2 from "@/assets/isaac-photo-2.png";
 
 const About = () => {
   return (
@@ -87,6 +89,25 @@ const About = () => {
             </div>
           </CardContent>
         </Card>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-8">
+          <div className="relative group overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+            <img 
+              src={photo1} 
+              alt="Isaac Mukungi - Professional Photo" 
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </div>
+          <div className="relative group overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+            <img 
+              src={photo2} 
+              alt="Isaac Mukungi - Creative Professional" 
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-accent/80 via-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </div>
+        </div>
       </div>
     </section>
   );
