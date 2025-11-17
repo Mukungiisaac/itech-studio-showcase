@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-import isaacPhoto1 from "@/assets/isaac-photo-1.png";
-import isaacPhoto2 from "@/assets/isaac-photo-2.png";
-import marketing1 from "@/assets/portfolio/marketing-1.jpg";
-import marketing2 from "@/assets/portfolio/marketing-2.jpg";
+import confusedPoster from "@/assets/portfolio/confused-poster.png";
+import doctorPoster from "@/assets/portfolio/doctor-poster.png";
+import advertisePoster from "@/assets/portfolio/advertise-poster.png";
+import socialPoster from "@/assets/portfolio/social-media-poster.png";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -64,8 +64,8 @@ const Hero = () => {
             {/* Top Left Image */}
             <div className="absolute top-0 left-0 w-[45%] aspect-square rounded-2xl overflow-hidden border-4 border-background shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img 
-                src={isaacPhoto1} 
-                alt="Isaac Mukungi Professional Photo" 
+                src={confusedPoster} 
+                alt="Marketing Poster - Confused by Marketing Tactics" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -73,8 +73,8 @@ const Hero = () => {
             {/* Top Right Image */}
             <div className="absolute top-0 right-0 w-[45%] aspect-square rounded-2xl overflow-hidden border-4 border-background shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img 
-                src={isaacPhoto2} 
-                alt="Isaac at Work" 
+                src={doctorPoster} 
+                alt="Doctor of Digital Marketing Poster" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -82,8 +82,8 @@ const Hero = () => {
             {/* Bottom Left Image */}
             <div className="absolute bottom-0 left-0 w-[45%] aspect-square rounded-2xl overflow-hidden border-4 border-background shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img 
-                src={marketing1} 
-                alt="Portfolio 3" 
+                src={advertisePoster} 
+                alt="Advertise With Us Poster" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -91,8 +91,8 @@ const Hero = () => {
             {/* Bottom Right Image */}
             <div className="absolute bottom-0 right-0 w-[45%] aspect-square rounded-2xl overflow-hidden border-4 border-background shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img 
-                src={marketing2} 
-                alt="Portfolio 4" 
+                src={socialPoster} 
+                alt="Social Media Content Poster" 
                 className="w-full h-full object-cover"
               />
             </div>
