@@ -92,9 +92,7 @@ const About = () => {
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
-              Quality content is not just about technical perfection—it's about creating meaningful connections 
-              and telling stories that resonate with your audience. Every project receives the same level of 
-              dedication and creative attention to detail.
+              My approach is simple: <span className="font-semibold text-foreground">solve problems with creativity, backed by technical skill.</span> Whether it's building a complex web application or producing a 30-second ad that captures hearts, I deliver solutions that work beautifully and inspire action. Quality isn't just about technical perfection—it's about creating meaningful connections and telling stories that resonate.
             </p>
 
             <div className="grid grid-cols-1 gap-6 pt-4">
@@ -103,9 +101,9 @@ const About = () => {
                   <Code2 className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Technical Mastery</h4>
+                  <h4 className="font-semibold mb-1">Software Engineering Excellence</h4>
                   <p className="text-sm text-muted-foreground">
-                    Professional-grade equipment and industry-standard techniques.
+                    Building scalable systems with modern frameworks, clean code, and best practices that stand the test of time.
                   </p>
                 </div>
               </div>
@@ -115,9 +113,9 @@ const About = () => {
                   <Lightbulb className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Creative Vision</h4>
+                  <h4 className="font-semibold mb-1">Creative Content Mastery</h4>
                   <p className="text-sm text-muted-foreground">
-                    Fresh perspectives and innovative ideas for every project.
+                    Transforming ideas into visual stories through video editing, design, and content that engages and converts.
                   </p>
                 </div>
               </div>
@@ -127,9 +125,9 @@ const About = () => {
                   <Heart className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Passion Driven</h4>
+                  <h4 className="font-semibold mb-1">Results That Matter</h4>
                   <p className="text-sm text-muted-foreground">
-                    Every frame, every edit, every detail crafted with genuine passion.
+                    Every line of code and every frame I edit is crafted with genuine passion and dedication to excellence.
                   </p>
                 </div>
               </div>
