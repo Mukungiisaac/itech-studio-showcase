@@ -2,22 +2,22 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, Linkedin, Twitter, Github } from "lucide-react";
 import { toast } from "sonner";
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! We'll get back to you soon.");
+    toast.success("Message sent! I'll get back to you within 24 hours.");
   };
 
   return (
     <section id="contact" className="py-24 px-6 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Create Something Amazing</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your next project? Let's create something amazing together
+            Have a project in mind? Let's discuss how we can bring your vision to life
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <Textarea 
-                    placeholder="Your Message" 
+                    placeholder="Tell me about your project..." 
                     required 
                     className="min-h-[150px] resize-none"
                   />
@@ -51,42 +51,70 @@ const Contact = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-gradient-to-br from-primary to-secondary">
-                  <Mail className="h-6 w-6 text-primary-foreground" />
+                <div className="p-3 rounded-lg bg-primary/10">
+                  <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Email</h3>
-                  <p className="text-muted-foreground">contact@itechstudio.com</p>
+                  <p className="text-muted-foreground">isaac.mukungi@example.com</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-gradient-to-br from-primary to-secondary">
-                  <Phone className="h-6 w-6 text-primary-foreground" />
+                <div className="p-3 rounded-lg bg-primary/10">
+                  <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Phone</h3>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+254 XXX XXX XXX</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-gradient-to-br from-primary to-secondary">
-                  <MapPin className="h-6 w-6 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-1">Location</h3>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+              <div className="pt-6">
+                <h3 className="font-semibold text-lg mb-4">Connect With Me</h3>
+                <div className="flex gap-3">
+                  <a 
+                    href="https://linkedin.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-3 rounded-lg bg-primary/10 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                  </a>
+                  <a 
+                    href="https://twitter.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-3 rounded-lg bg-primary/10 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                  >
+                    <Twitter className="h-5 w-5" />
+                  </a>
+                  <a 
+                    href="https://github.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-3 rounded-lg bg-primary/10 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                  >
+                    <Github className="h-5 w-5" />
+                  </a>
                 </div>
               </div>
             </div>
 
-            <Card className="border-2 bg-gradient-to-br from-primary to-secondary p-8 text-primary-foreground">
-              <h3 className="text-2xl font-bold mb-4">Let's Build Something Great</h3>
-              <p className="text-primary-foreground/90 leading-relaxed">
-                Whether you need a stunning new brand identity, a powerful marketing campaign, 
-                or custom software solutions, we're here to help bring your vision to life.
-              </p>
+            <Card className="border-2 bg-gradient-to-br from-primary/10 to-primary/5">
+              <CardContent className="pt-8 pb-8">
+                <h3 className="text-2xl font-bold mb-4">Ready to Start?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Whether you need a stunning brand identity, a powerful digital marketing campaign, 
+                  custom software solutions, or engaging video content—I'm here to help transform 
+                  your ideas into reality.
+                </p>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p>✓ Fast response time (within 24 hours)</p>
+                  <p>✓ Free initial consultation</p>
+                  <p>✓ Flexible pricing and packages</p>
+                </div>
+              </CardContent>
             </Card>
           </div>
         </div>
