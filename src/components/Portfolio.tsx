@@ -3,48 +3,57 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 
-import poster1 from "@/assets/portfolio/poster-1.jpg";
-import poster2 from "@/assets/portfolio/poster-2.jpg";
+import confusedPoster from "@/assets/portfolio/confused-poster.png";
+import doctorPoster from "@/assets/portfolio/doctor-poster.png";
+import advertisePoster from "@/assets/portfolio/advertise-poster.png";
+import socialPoster from "@/assets/portfolio/social-media-poster.png";
+import novemberPoster from "@/assets/portfolio/november-poster.png";
 import software1 from "@/assets/portfolio/software-1.jpg";
 import software2 from "@/assets/portfolio/software-2.jpg";
-import marketing1 from "@/assets/portfolio/marketing-1.jpg";
-import marketing2 from "@/assets/portfolio/marketing-2.jpg";
 
 const portfolioItems = {
   design: [
     { 
-      image: poster1, 
-      title: "Tech Summit 2024 Poster", 
-      category: "Event Design",
+      image: confusedPoster, 
+      title: "Marketing Confusion Campaign", 
+      category: "Digital Marketing Poster",
       tools: ["Adobe Photoshop", "Illustrator"],
-      challenge: "Create a vibrant poster that captures the energy of a tech conference while maintaining readability",
-      result: "Increased event registrations by 45% through social media shares"
+      challenge: "Create engaging social media content addressing common pain points in digital marketing",
+      result: "High engagement rates, sparked conversations about marketing strategy clarity"
     },
     { 
-      image: poster2, 
-      title: "Modern Brand Identity Kit", 
-      category: "Visual Identity",
+      image: doctorPoster, 
+      title: "Digital Marketing Authority Branding", 
+      category: "Brand Positioning",
       tools: ["Figma", "Adobe Illustrator"],
-      challenge: "Develop a complete brand system for a startup that balances professionalism with approachability",
-      result: "Client secured $500K seed funding, citing brand impact in pitch"
+      challenge: "Position iTech Studio as the 'Doctor of Digital Marketing' with memorable visual identity",
+      result: "Strengthened brand authority, increased client trust and consultation requests"
+    },
+    { 
+      image: advertisePoster, 
+      title: "Business Advertising Campaign", 
+      category: "Client Acquisition",
+      tools: ["Adobe Creative Suite", "3D Character Design"],
+      challenge: "Create approachable, youth-friendly advertising campaign targeting small businesses",
+      result: "Successfully attracted diverse client base, improved registration rates"
     },
   ],
   marketing: [
     { 
-      image: marketing1, 
-      title: "Instagram Growth Campaign", 
-      category: "Social Media Marketing",
-      tools: ["Meta Ads Manager", "Canva", "Analytics"],
-      challenge: "Grow organic reach and engagement for a lifestyle brand in a saturated market",
-      result: "3x follower growth in 60 days, 250% increase in engagement rate"
+      image: socialPoster, 
+      title: "Social Media Content Strategy", 
+      category: "Content Marketing",
+      tools: ["Photoshop", "Social Media Management"],
+      challenge: "Design engaging visual that demonstrates social media marketing value",
+      result: "Increased engagement across all platforms, positioned as social media expert"
     },
     { 
-      image: marketing2, 
-      title: "Product Launch Email Series", 
-      category: "Email Marketing",
-      tools: ["Mailchimp", "Photoshop"],
-      challenge: "Design a 5-email sequence that converts subscribers to customers during product launch",
-      result: "42% open rate, 18% click-through rate, $125K in launch week sales"
+      image: novemberPoster, 
+      title: "November Launch Campaign", 
+      category: "Promotional Design",
+      tools: ["Illustrator", "Photography", "Mockup Design"],
+      challenge: "Create impactful monthly campaign promoting design services with personal branding",
+      result: "Generated significant interest, strengthened personal brand connection"
     },
   ],
   software: [
@@ -65,24 +74,6 @@ const portfolioItems = {
       result: "Reduced client reporting time by 80%, serves 50+ enterprise clients"
     },
   ],
-  videos: [
-    {
-      image: marketing1,
-      title: "Brand Story Short Film",
-      category: "Commercial Video",
-      tools: ["Adobe Premiere Pro", "After Effects"],
-      challenge: "Tell a compelling 60-second brand story that drives emotional connection",
-      result: "2M+ views across platforms, 15% increase in brand awareness"
-    },
-    {
-      image: poster1,
-      title: "Product Demo & Tutorial",
-      category: "Educational Content",
-      tools: ["Final Cut Pro", "Motion Graphics"],
-      challenge: "Explain complex software features in an engaging, easy-to-follow format",
-      result: "Reduced support tickets by 30%, 95% viewer retention rate"
-    },
-  ],
 };
 
 const Portfolio = () => {
@@ -97,11 +88,10 @@ const Portfolio = () => {
         </div>
 
         <Tabs defaultValue="design" className="w-full">
-          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-12 h-14">
+          <TabsList className="grid w-full max-w-xl mx-auto grid-cols-3 mb-12 h-14">
             <TabsTrigger value="design" className="text-base">Design</TabsTrigger>
             <TabsTrigger value="marketing" className="text-base">Marketing</TabsTrigger>
             <TabsTrigger value="software" className="text-base">Software</TabsTrigger>
-            <TabsTrigger value="videos" className="text-base">Videos</TabsTrigger>
           </TabsList>
 
           {Object.entries(portfolioItems).map(([key, items]) => (
