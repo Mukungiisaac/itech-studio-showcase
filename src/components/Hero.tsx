@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
+import poster1 from "@/assets/portfolio/poster-1.jpg";
+import poster2 from "@/assets/portfolio/poster-2.jpg";
+import marketing1 from "@/assets/portfolio/marketing-1.jpg";
+import marketing2 from "@/assets/portfolio/marketing-2.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -8,48 +12,91 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/20 -z-10" />
-      
-      <div className="max-w-6xl mx-auto text-center space-y-10 animate-fade-in">
-        <div className="space-y-2">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 mb-6">
-            <Sparkles className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Available for Projects</span>
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 -z-10">
+        <img 
+          src={heroBg} 
+          alt="Studio Background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/60 backdrop-blur-[2px]" />
+      </div>
+
+      {/* Large Text Overlay */}
+      <div className="absolute inset-0 flex items-center justify-center -z-5 pointer-events-none">
+        <h2 className="text-[12vw] md:text-[10vw] font-black text-foreground/10 tracking-tight whitespace-nowrap">
+          Isaac Mukungi
+        </h2>
+      </div>
+
+      {/* Content Grid */}
+      <div className="max-w-7xl mx-auto px-6 w-full py-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="space-y-8 animate-fade-in">
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+                Your Premier Destination
+              </h1>
+              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+                for <span className="text-primary">Quality Content</span>
+              </h1>
+            </div>
+            
+            <p className="text-xl text-muted-foreground max-w-xl">
+              Where creativity meets professionalism, and stories come to life.
+            </p>
+            
+            <div className="pt-4">
+              <Button 
+                size="lg" 
+                className="hero-cta text-base px-10 py-6 text-primary-foreground font-semibold"
+                onClick={() => scrollToSection("portfolio")}
+              >
+                Discover
+              </Button>
+            </div>
           </div>
-          
-          <h1 className="text-6xl md:text-8xl font-black tracking-tight">
-            Isaac Mukungi
-          </h1>
-          
-          <div className="text-xl md:text-2xl font-semibold text-muted-foreground space-y-2">
-            <p>Software Engineer • Digital Marketer</p>
-            <p>Creative Designer • Content Creator</p>
+
+          {/* Right Content - Portfolio Images */}
+          <div className="relative h-[500px] hidden md:block">
+            {/* Top Left Image */}
+            <div className="absolute top-0 left-0 w-[45%] aspect-square rounded-2xl overflow-hidden border-4 border-background shadow-2xl transform hover:scale-105 transition-transform duration-300">
+              <img 
+                src={poster1} 
+                alt="Portfolio 1" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Top Right Image */}
+            <div className="absolute top-0 right-0 w-[45%] aspect-square rounded-2xl overflow-hidden border-4 border-background shadow-2xl transform hover:scale-105 transition-transform duration-300">
+              <img 
+                src={poster2} 
+                alt="Portfolio 2" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Bottom Left Image */}
+            <div className="absolute bottom-0 left-0 w-[45%] aspect-square rounded-2xl overflow-hidden border-4 border-background shadow-2xl transform hover:scale-105 transition-transform duration-300">
+              <img 
+                src={marketing1} 
+                alt="Portfolio 3" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Bottom Right Image */}
+            <div className="absolute bottom-0 right-0 w-[45%] aspect-square rounded-2xl overflow-hidden border-4 border-background shadow-2xl transform hover:scale-105 transition-transform duration-300">
+              <img 
+                src={marketing2} 
+                alt="Portfolio 4" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-        </div>
-        
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Blending <span className="text-primary font-semibold">technology</span> with <span className="text-primary font-semibold">creativity</span> to craft innovative solutions that tell compelling stories and drive real results
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
-          <Button 
-            size="lg" 
-            className="hero-cta text-lg px-8 py-6 rounded-full group"
-            onClick={() => scrollToSection("portfolio")}
-          >
-            View My Work
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="text-lg px-8 py-6 rounded-full border-2 hover:border-primary hover:bg-primary/5"
-            onClick={() => scrollToSection("contact")}
-          >
-            Hire Me
-          </Button>
         </div>
       </div>
     </section>

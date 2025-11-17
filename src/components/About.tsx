@@ -77,7 +77,7 @@ const About = () => {
           </div>
         </div>
 
-        <Card className="border-2 bg-gradient-to-br from-primary/10 to-primary/5">
+        <Card className="border-2 bg-primary/10">
           <CardContent className="pt-8 pb-8">
             <div className="text-center space-y-4">
               <h3 className="text-2xl font-bold">My Philosophy</h3>
