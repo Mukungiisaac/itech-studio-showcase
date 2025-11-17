@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Code2, Lightbulb, Heart } from "lucide-react";
 import photo1 from "@/assets/isaac-photo-1.png";
 import photo2 from "@/assets/isaac-photo-2.png";
@@ -6,106 +6,145 @@ import photo2 from "@/assets/isaac-photo-2.png";
 const About = () => {
   return (
     <section id="about" className="py-24 px-6 bg-muted/30">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Where innovation meets creativity
-          </p>
+      <div className="max-w-7xl mx-auto">
+        <div className="space-y-4 text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold">
+            Who <span className="text-primary">I Am</span>
+          </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div className="space-y-6">
-            <h3 className="text-3xl font-bold">The Journey</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm <span className="text-foreground font-semibold">Isaac Mukungi</span>, known in creative circles as <span className="text-primary font-semibold">Izooh</span>. By profession, I'm a <span className="font-semibold text-foreground">Software Engineer</span> who builds robust, scalable applications. But my passion extends far beyond code.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I've discovered that the intersection of <span className="text-primary font-semibold">technology</span> and <span className="text-primary font-semibold">creativity</span> is where magic happens. From designing eye-catching brand identities to crafting viral social media campaigns, from editing cinematic videos to creating content that resonates—I bring a unique blend of technical precision and creative flair to every project.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              My approach? <span className="font-semibold text-foreground">Solve problems with creativity, backed by technical skill.</span> Whether it's building a complex web application or producing a 30-second ad that captures hearts, I deliver solutions that work and inspire.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <Card className="border-2 hover:border-primary transition-all duration-300">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <Code2 className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg mb-2">Technical Excellence</h4>
-                    <p className="text-muted-foreground">
-                      Building scalable systems, crafting clean code, and solving complex technical challenges with modern frameworks and best practices.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary transition-all duration-300">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <Lightbulb className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg mb-2">Creative Innovation</h4>
-                    <p className="text-muted-foreground">
-                      Transforming ideas into visual stories through design, video editing, and content that engages, entertains, and converts.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary transition-all duration-300">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <Heart className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg mb-2">Client-Focused Results</h4>
-                    <p className="text-muted-foreground">
-                      Understanding your vision, meeting deadlines, and delivering results that exceed expectations while maintaining authenticity.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-
-        <Card className="border-2 bg-primary/10">
-          <CardContent className="pt-8 pb-8">
-            <div className="text-center space-y-4">
-              <h3 className="text-2xl font-bold">My Philosophy</h3>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                "Work hard, stay humble, and let your creativity speak. Mix innovation with tradition, humor with professionalism, and always deliver value. Every project is an opportunity to create something remarkable—let's make it count."
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-
-        <div className="mt-16 grid md:grid-cols-2 gap-8">
-          <div className="relative group overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+        {/* Main About Section - Side by Side Layout */}
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl">
             <img 
               src={photo1} 
-              alt="Isaac Mukungi - Professional Photo" 
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              alt="Isaac Mukungi - Professional Content Creator" 
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
-          <div className="relative group overflow-hidden rounded-2xl aspect-[4/5] shadow-xl">
+
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <p className="text-accent font-semibold">Who We Are</p>
+              <h3 className="text-3xl md:text-4xl font-bold">
+                Creating Content That Inspires and Engages
+              </h3>
+            </div>
+
+            <p className="text-muted-foreground leading-relaxed">
+              At <span className="font-semibold text-accent">Obinna+ Studios</span>, we bring ideas to life. With a focus on the art and beauty 
+              of the creative world, we deliver exceptional results for content creators, 
+              brands, and businesses. From concept to execution, our experienced production and 
+              talent management, we're your one-stop destination for creative excellence.
+            </p>
+
+            <div className="space-y-4 pt-4">
+              <div className="flex items-start gap-3">
+                <div className="bg-accent text-white p-1.5 rounded-full shrink-0 mt-1">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-muted-foreground">Cutting-edge equipment and facilities</p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="bg-accent text-white p-1.5 rounded-full shrink-0 mt-1">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-muted-foreground">Experienced production team</p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="bg-accent text-white p-1.5 rounded-full shrink-0 mt-1">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-muted-foreground">Flexible studio spaces</p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="bg-accent text-white p-1.5 rounded-full shrink-0 mt-1">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-muted-foreground">Customized solutions for every project</p>
+              </div>
+            </div>
+
+            <Button 
+              className="bg-accent hover:bg-accent/90 text-accent-foreground mt-6"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Learn More About Us
+            </Button>
+          </div>
+        </div>
+
+        {/* Second Photo Section */}
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 order-2 md:order-1">
+            <div className="space-y-2">
+              <h3 className="text-3xl md:text-4xl font-bold">
+                My <span className="text-primary">Philosophy</span>
+              </h3>
+            </div>
+
+            <p className="text-muted-foreground leading-relaxed">
+              Quality content is not just about technical perfection—it's about creating meaningful connections 
+              and telling stories that resonate with your audience. Every project receives the same level of 
+              dedication and creative attention to detail.
+            </p>
+
+            <div className="grid grid-cols-1 gap-6 pt-4">
+              <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-lg border border-primary/20">
+                <div className="bg-primary text-white p-3 rounded-lg shrink-0">
+                  <Code2 className="h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Technical Mastery</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Professional-grade equipment and industry-standard techniques.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-accent/5 rounded-lg border border-accent/20">
+                <div className="bg-accent text-white p-3 rounded-lg shrink-0">
+                  <Lightbulb className="h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Creative Vision</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Fresh perspectives and innovative ideas for every project.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-lg border border-primary/20">
+                <div className="bg-primary text-white p-3 rounded-lg shrink-0">
+                  <Heart className="h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Passion Driven</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Every frame, every edit, every detail crafted with genuine passion.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative overflow-hidden rounded-2xl shadow-2xl order-1 md:order-2">
             <img 
               src={photo2} 
               alt="Isaac Mukungi - Creative Professional" 
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-accent/80 via-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
         </div>
       </div>
