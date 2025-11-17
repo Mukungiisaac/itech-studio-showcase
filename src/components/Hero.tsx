@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-import poster1 from "@/assets/portfolio/poster-1.jpg";
-import poster2 from "@/assets/portfolio/poster-2.jpg";
+import isaacPhoto1 from "@/assets/isaac-photo-1.png";
+import isaacPhoto2 from "@/assets/isaac-photo-2.png";
 import marketing1 from "@/assets/portfolio/marketing-1.jpg";
 import marketing2 from "@/assets/portfolio/marketing-2.jpg";
 
@@ -64,8 +64,8 @@ const Hero = () => {
             {/* Top Left Image */}
             <div className="absolute top-0 left-0 w-[45%] aspect-square rounded-2xl overflow-hidden border-4 border-background shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img 
-                src={poster1} 
-                alt="Portfolio 1" 
+                src={isaacPhoto1} 
+                alt="Isaac Mukungi Professional Photo" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -73,8 +73,8 @@ const Hero = () => {
             {/* Top Right Image */}
             <div className="absolute top-0 right-0 w-[45%] aspect-square rounded-2xl overflow-hidden border-4 border-background shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img 
-                src={poster2} 
-                alt="Portfolio 2" 
+                src={isaacPhoto2} 
+                alt="Isaac at Work" 
                 className="w-full h-full object-cover"
               />
             </div>
