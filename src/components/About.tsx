@@ -25,17 +25,14 @@ const About = () => {
 
           <div className="space-y-6">
             <div className="space-y-2">
-              <p className="text-accent font-semibold">Who We Are</p>
+              <p className="text-accent font-semibold">Who I Am</p>
               <h3 className="text-3xl md:text-4xl font-bold">
                 Creating Content That Inspires and Engages
               </h3>
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
-              At <span className="font-semibold text-accent">Obinna+ Studios</span>, we bring ideas to life. With a focus on the art and beauty 
-              of the creative world, we deliver exceptional results for content creators, 
-              brands, and businesses. From concept to execution, our experienced production and 
-              talent management, we're your one-stop destination for creative excellence.
+              I'm <span className="font-semibold text-foreground">Isaac Mukungi</span>, known in creative circles as <span className="font-semibold text-primary">Izooh</span>. By profession, I'm a <span className="font-semibold text-foreground">Software Engineer</span> who builds robust, scalable applications. But my passion extends far beyond code—I've discovered that the intersection of <span className="text-primary font-semibold">technology</span> and <span className="text-primary font-semibold">creativity</span> is where magic happens. From designing eye-catching brand identities to crafting viral social media campaigns, I bring a unique blend of technical precision and creative flair to every project.
             </p>
 
             <div className="space-y-4 pt-4">
@@ -80,7 +77,7 @@ const About = () => {
               className="bg-accent hover:bg-accent/90 text-accent-foreground mt-6"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Learn More About Us
+              Learn More About Me
             </Button>
           </div>
         </div>
