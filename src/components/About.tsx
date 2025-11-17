@@ -32,7 +32,7 @@ const About = () => {
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
-              I'm <span className="font-semibold text-foreground">Isaac Mukungi</span>, known in creative circles as <span className="font-semibold text-primary">Izooh</span>. By profession, I'm a <span className="font-semibold text-foreground">Software Engineer</span> who builds robust, scalable applications. But my passion extends far beyond code—I've discovered that the intersection of <span className="text-primary font-semibold">technology</span> and <span className="text-primary font-semibold">creativity</span> is where magic happens. From designing eye-catching brand identities to crafting viral social media campaigns, I bring a unique blend of technical precision and creative flair to every project.
+              I'm <span className="font-semibold text-foreground">Isaac Mukungi</span>, known in creative circles as <span className="font-semibold text-primary">Izooh</span>. By profession, I'm a <span className="font-semibold text-foreground">Software Engineer</span> who builds robust, scalable applications. But my passion extends far beyond code—I've discovered that the intersection of <span className="text-primary font-semibold">technology</span> and <span className="text-primary font-semibold">creativity</span> is where magic happens. From designing eye-catching brand identities to crafting viral social media campaigns, producing engaging audio and video content, and serving as an <span className="font-semibold text-accent">Event MC</span> at university events including the St John Ambulance event at Kisii University, I bring a unique blend of technical precision and creative flair to every project.
             </p>
 
             <div className="space-y-4 pt-4">
@@ -70,6 +70,24 @@ const About = () => {
                   </svg>
                 </div>
                 <p className="text-muted-foreground">Creative strategy and digital marketing</p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="bg-accent text-white p-1.5 rounded-full shrink-0 mt-1">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-muted-foreground">Audio content production and studio content creation</p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="bg-accent text-white p-1.5 rounded-full shrink-0 mt-1">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <p className="text-muted-foreground">Event MC and host for university and corporate events</p>
               </div>
             </div>
 
@@ -115,7 +133,7 @@ const About = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Creative Content Mastery</h4>
                   <p className="text-sm text-muted-foreground">
-                    Transforming ideas into visual stories through video editing, design, and content that engages and converts.
+                    From studio-quality audio production to cinematic video editing and compelling graphic design—I create content that captivates audiences across all platforms. Whether it's podcast episodes, YouTube content, or social media campaigns, every piece is crafted to tell your story powerfully.
                   </p>
                 </div>
               </div>
