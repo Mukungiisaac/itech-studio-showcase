@@ -38,7 +38,7 @@ const Services = () => {
   return (
     <section id="services" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Services Offered</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Comprehensive solutions from concept to execution
@@ -51,7 +51,8 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl group"
+                className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl group animate-slide-up opacity-0"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="pt-8 pb-8 space-y-4">
                   <div className="inline-flex p-4 rounded-2xl bg-accent/10 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
