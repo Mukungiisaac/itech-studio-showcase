@@ -13,6 +13,7 @@ import software2 from "@/assets/portfolio/software-2.jpg";
 import contentSinging from "@/assets/portfolio/content-singing.jpg";
 import contentStudio from "@/assets/portfolio/content-studio.jpg";
 import eventMcee from "@/assets/event-mcee.jpg";
+import eventMceeCreativity from "@/assets/event-mcee-creativity.jpg";
 
 const portfolioItems = {
   design: [
@@ -103,6 +104,14 @@ const portfolioItems = {
       tools: ["Public Speaking", "Audience Engagement", "Event Coordination"],
       challenge: "Host a university event for St John Ambulance, ensuring smooth transitions and maintaining audience engagement throughout",
       result: "Successfully hosted event with excellent crowd engagement, professional delivery, and seamless program flow"
+    },
+    { 
+      image: eventMceeCreativity, 
+      title: "Creativity Night MC - Kisii University Christian Union", 
+      category: "Christian Event Hosting",
+      tools: ["Public Speaking", "Audience Engagement", "Entertainment Coordination"],
+      challenge: "Host a creative night event for the Christian Union, balancing entertainment with spiritual atmosphere and keeping the audience engaged",
+      result: "Created a memorable evening with excellent audience participation, smooth transitions, and maintained the spiritual essence of the event"
     },
   ],
 };
