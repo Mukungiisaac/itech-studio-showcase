@@ -12,6 +12,7 @@ import itechmarketplace from "@/assets/portfolio/itechmarketplace.png";
 import software2 from "@/assets/portfolio/software-2.jpg";
 import contentSinging from "@/assets/portfolio/content-singing.jpg";
 import contentStudio from "@/assets/portfolio/content-studio.jpg";
+import eventMcee from "@/assets/event-mcee.jpg";
 
 const portfolioItems = {
   design: [
@@ -92,6 +93,14 @@ const portfolioItems = {
       tools: ["Professional Microphone", "Audio Interface", "Editing Software"],
       challenge: "Produce compelling content that resonates with target audiences across multiple platforms",
       result: "Built consistent content library, increased audience engagement and brand presence"
+    },
+    { 
+      image: eventMcee, 
+      title: "Event MC - St John Ambulance at Kisii University", 
+      category: "Event Hosting",
+      tools: ["Public Speaking", "Audience Engagement", "Event Coordination"],
+      challenge: "Host a university event for St John Ambulance, ensuring smooth transitions and maintaining audience engagement throughout",
+      result: "Successfully hosted event with excellent crowd engagement, professional delivery, and seamless program flow"
     },
   ],
 };

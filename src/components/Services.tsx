@@ -1,4 +1,4 @@
-import { Code2, TrendingUp, Palette, Video, Megaphone } from "lucide-react";
+import { Code2, TrendingUp, Palette, Video, Megaphone, Mic } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
@@ -31,6 +31,12 @@ const services = [
     title: "Content Creation",
     description: "Skits, punchline scripts, storytelling, brand content, and product reviews that resonate with audiences.",
     value: "Authentic content that builds community and drives action",
+  },
+  {
+    icon: Mic,
+    title: "Event MC",
+    description: "Professional hosting for corporate events, university functions, weddings, and community gatherings with engaging delivery.",
+    value: "Smooth event flow and memorable guest experiences",
   },
 ];
 
