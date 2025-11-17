@@ -127,7 +127,7 @@ const portfolioItems = {
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-24 px-6 bg-muted/30">
+    <section id="portfolio" className="py-24 px-6 bg-muted/30 shadow-2xl">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Portfolio</h2>
