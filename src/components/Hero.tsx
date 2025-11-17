@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Where creativity meets professionalism, and stories come to life.
+            Where creativity meets professionalism, and ideas don't buffer.
           </p>
           
           <div className="pt-4">
