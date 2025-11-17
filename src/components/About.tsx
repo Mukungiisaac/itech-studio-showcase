@@ -5,7 +5,7 @@ import photo2 from "@/assets/isaac-photo-2.png";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 px-6 bg-muted/30">
+    <section id="about" className="py-24 px-6 bg-muted/30 shadow-2xl">
       <div className="max-w-7xl mx-auto">
         <div className="space-y-4 text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold">

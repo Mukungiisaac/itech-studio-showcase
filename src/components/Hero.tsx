@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 shadow-2xl">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 -z-10">
         <img 
