@@ -1,14 +1,39 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, Linkedin, Twitter, Github } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! I'll get back to you within 24 hours.");
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('contacts')
+        .insert([formData]);
+
+      if (error) throw error;
+
+      toast.success("Message sent! I'll review your message soon.");
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -26,23 +51,44 @@ const Contact = () => {
             <CardContent className="pt-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Input placeholder="Your Name" required className="h-12" />
+                  <Input 
+                    placeholder="Your Name" 
+                    required 
+                    className="h-12"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  />
                 </div>
                 <div>
-                  <Input type="email" placeholder="Your Email" required className="h-12" />
+                  <Input 
+                    type="email" 
+                    placeholder="Your Email" 
+                    required 
+                    className="h-12"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  />
                 </div>
                 <div>
-                  <Input placeholder="Subject" required className="h-12" />
+                  <Input 
+                    placeholder="Subject" 
+                    required 
+                    className="h-12"
+                    value={formData.subject}
+                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                  />
                 </div>
                 <div>
                   <Textarea 
                     placeholder="Tell me about your project..." 
                     required 
                     className="min-h-[150px] resize-none"
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full hero-cta h-12 text-base">
-                  Send Message
+                <Button type="submit" size="lg" className="w-full hero-cta h-12 text-base" disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </CardContent>
