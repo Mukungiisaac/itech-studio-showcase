@@ -20,7 +20,7 @@ const Index = () => {
       <footer className="py-8 px-6 bg-foreground text-background">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-sm">
-            © 2025 Isaac Mukungi. All rights reserved. Built with passion and precision.
+            © 2025 iTech Studio. All rights reserved. Built with passion and precision.
           </p>
         </div>
       </footer>
