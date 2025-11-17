@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/isaac-photo-1.png";
 import confusedPoster from "@/assets/portfolio/confused-poster.png";
 import doctorPoster from "@/assets/portfolio/doctor-poster.png";
 import advertisePoster from "@/assets/portfolio/advertise-poster.png";
@@ -17,10 +17,10 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10">
         <img 
           src={heroBg} 
-          alt="Studio Background" 
+          alt="Isaac Mukungi - Professional Photo" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/60 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
       </div>
 
       {/* Large Text Overlay */}
