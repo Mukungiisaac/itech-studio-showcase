@@ -21,6 +21,7 @@ export default {
         foreground: "hsl(var(--foreground))",
         "gradient-primary": "var(--gradient-primary)",
         "gradient-hero": "var(--gradient-hero)",
+        "gradient-dark": "var(--gradient-dark)",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

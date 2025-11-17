@@ -1,51 +1,71 @@
-import { Palette, TrendingUp, Code2 } from "lucide-react";
+import { Code2, TrendingUp, Palette, Video, Megaphone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
   {
-    icon: Palette,
-    title: "Graphic Design",
-    description: "Eye-catching visuals that communicate your brand's story. From logos to complete brand identities.",
+    icon: Code2,
+    title: "Software Engineering",
+    description: "Web development, system design, app interfaces, and full-stack solutions built with modern technologies.",
+    value: "Scalable, efficient, and maintainable code that powers your business",
   },
   {
     icon: TrendingUp,
     title: "Digital Marketing",
-    description: "Strategic campaigns that drive engagement and conversions. Social media, content, and performance marketing.",
+    description: "Social media strategy, influencer marketing, brand visibility, and campaign planning that drives engagement.",
+    value: "Increased reach, higher conversions, and measurable growth",
   },
   {
-    icon: Code2,
-    title: "Software Engineering",
-    description: "Custom software solutions built with cutting-edge technology. Web apps, mobile apps, and enterprise systems.",
+    icon: Palette,
+    title: "Graphic Design",
+    description: "Logos, posters, brand identity kits, and promotional materials that capture attention and communicate effectively.",
+    value: "Professional visuals that elevate your brand perception",
+  },
+  {
+    icon: Video,
+    title: "Video Editing",
+    description: "Short-form videos, ads, promo videos, event edits, and YouTube content optimized for impact and engagement.",
+    value: "Cinematic storytelling that captivates and converts viewers",
+  },
+  {
+    icon: Megaphone,
+    title: "Content Creation",
+    description: "Skits, punchline scripts, storytelling, brand content, and product reviews that resonate with audiences.",
+    value: "Authentic content that builds community and drives action",
   },
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 px-6 bg-muted/30">
+    <section id="services" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Services Offered</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive solutions tailored to your needs
+            Comprehensive solutions from concept to execution
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <Card 
                 key={index} 
-                className="service-card border-2 hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+                className="border-2 hover:border-primary transition-all duration-300 hover:shadow-xl group"
               >
-                <CardContent className="pt-8 pb-8 text-center space-y-4">
-                  <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-primary to-secondary">
-                    <Icon className="h-8 w-8 text-primary-foreground" />
+                <CardContent className="pt-8 pb-8 space-y-4">
+                  <div className="inline-flex p-4 rounded-2xl bg-primary/10 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                    <Icon className="h-8 w-8 text-primary group-hover:text-primary-foreground transition-colors" />
                   </div>
                   <h3 className="text-2xl font-bold">{service.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
+                  <div className="pt-2 border-t border-border/50">
+                    <p className="text-sm font-semibold text-primary">
+                      {service.value}
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             );
