@@ -29,7 +29,10 @@ const Navigation = () => {
             <div className="p-2 border-2 border-primary rounded-full">
               <img src={logo} alt="iTech Studio" className="h-6 w-auto" />
             </div>
-            <span className="text-primary font-bold text-lg">iTech Studio</span>
+            <span className="font-bold text-lg">
+              <span className="text-primary">iTech</span>{" "}
+              <span className="text-secondary">Studio</span>
+            </span>
           </div>
 
           {/* Desktop Navigation */}
