@@ -10,6 +10,8 @@ import socialPoster from "@/assets/portfolio/social-media-poster.png";
 import novemberPoster from "@/assets/portfolio/november-poster.png";
 import itechmarketplace from "@/assets/portfolio/itechmarketplace.png";
 import software2 from "@/assets/portfolio/software-2.jpg";
+import contentSinging from "@/assets/portfolio/content-singing.jpg";
+import contentStudio from "@/assets/portfolio/content-studio.jpg";
 
 const portfolioItems = {
   design: [
@@ -74,6 +76,24 @@ const portfolioItems = {
       result: "Reduced client reporting time by 80%, serves 50+ enterprise clients"
     },
   ],
+  content: [
+    { 
+      image: contentSinging, 
+      title: "Audio Content Production", 
+      category: "Podcast & Music Recording",
+      tools: ["Studio Equipment", "Audio Editing", "Sound Design"],
+      challenge: "Create high-quality audio content with professional sound engineering and production",
+      result: "Delivered engaging podcast episodes and music recordings with exceptional audio quality"
+    },
+    { 
+      image: contentStudio, 
+      title: "Studio Content Creation", 
+      category: "Media Production",
+      tools: ["Professional Microphone", "Audio Interface", "Editing Software"],
+      challenge: "Produce compelling content that resonates with target audiences across multiple platforms",
+      result: "Built consistent content library, increased audience engagement and brand presence"
+    },
+  ],
 };
 
 const Portfolio = () => {
@@ -88,10 +108,11 @@ const Portfolio = () => {
         </div>
 
         <Tabs defaultValue="design" className="w-full animate-slide-up opacity-0" style={{ animationDelay: "0.2s" }}>
-          <TabsList className="grid w-full max-w-xl mx-auto grid-cols-3 mb-12 h-14">
+          <TabsList className="grid w-full max-w-4xl mx-auto grid-cols-4 mb-12 h-14">
             <TabsTrigger value="design" className="text-base">Design</TabsTrigger>
             <TabsTrigger value="marketing" className="text-base">Marketing</TabsTrigger>
             <TabsTrigger value="software" className="text-base">Software</TabsTrigger>
+            <TabsTrigger value="content" className="text-base">Content Creation</TabsTrigger>
           </TabsList>
 
           {Object.entries(portfolioItems).map(([key, items]) => (
