@@ -29,7 +29,7 @@ const testimonials = [
   },
   {
     name: "Joseph Wendo",
-    role: "Product Manager, Nayolites Production Empire",
+    role: "Production Manager, Nayolites Production Empire",
     content: "Isaac's creative vision and technical expertise transformed our production workflow. His innovative approach and dedication to quality consistently deliver outstanding results that exceed expectations.",
     rating: 5,
     image: josephWendo,
