@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import bruceFaraday from "@/assets/testimonials/bruce-faraday.jpg";
 import haggai from "@/assets/testimonials/haggai.jpg";
-import emilyRodriguez from "@/assets/testimonials/emily-rodriguez.jpg";
+import emmanuelOmbogo from "@/assets/testimonials/emmanuel-ombogo.jpg";
 import davidOmondi from "@/assets/testimonials/david-omondi.jpg";
 
 const testimonials = [
@@ -21,11 +21,11 @@ const testimonials = [
     image: bruceFaraday,
   },
   {
-    name: "Emily Rodriguez",
-    role: "Founder, CreativeHub",
-    content: "Isaac's video editing skills are top-notch. He took our raw footage and turned it into a cinematic masterpiece that perfectly captured our brand story. The attention to detail and creative vision is unmatched.",
+    name: "Emmanuel Ombogo",
+    role: "Graphivio Studios",
+    content: "Isaac's design work is exceptional. His creative approach and attention to detail brought our vision to life. The quality and professionalism he brings to every project is outstanding.",
     rating: 5,
-    image: emilyRodriguez,
+    image: emmanuelOmbogo,
   },
   {
     name: "David Omondi",
