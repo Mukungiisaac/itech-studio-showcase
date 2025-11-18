@@ -15,7 +15,7 @@ const About = () => {
 
         {/* Main About Section - Side by Side Layout */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl animate-slide-right opacity-0">
+          <div className="relative overflow-hidden rounded-tl-[80px] rounded-br-[80px] rounded-tr-2xl rounded-bl-2xl shadow-2xl animate-slide-right opacity-0">
             <img 
               src={photo1} 
               alt="Isaac Mukungi - Professional Content Creator" 
@@ -152,7 +152,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-2xl shadow-2xl order-1 md:order-2 animate-slide-left opacity-0" style={{ animationDelay: "0.2s" }}>
+          <div className="relative overflow-hidden rounded-tl-[80px] rounded-br-[80px] rounded-tr-2xl rounded-bl-2xl shadow-2xl order-1 md:order-2 animate-slide-left opacity-0" style={{ animationDelay: "0.2s" }}>
             <img 
               src={photo2} 
               alt="Isaac Mukungi - Creative Professional" 
