@@ -57,7 +57,7 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className="border-2 hover:border-primary rounded-tl-[80px] rounded-br-[80px] rounded-tr-2xl rounded-bl-2xl transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-105 group animate-slide-up opacity-0"
+                className="border-2 hover:border-primary transition-all duration-500 ease-in-out hover:shadow-xl hover:scale-105 group animate-slide-up opacity-0"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="pt-8 pb-8 space-y-4">
