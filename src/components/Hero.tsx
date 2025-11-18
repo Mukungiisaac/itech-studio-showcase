@@ -16,7 +16,7 @@ const Hero = () => {
           alt="Creative Studio Setup - Microphone" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/90 backdrop-blur-md" />
+        <div className="absolute inset-0 bg-background/60 backdrop-blur-sm" />
       </div>
 
       {/* Large Text Overlay */}
