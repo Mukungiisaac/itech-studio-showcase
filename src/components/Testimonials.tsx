@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 import bruceFaraday from "@/assets/testimonials/bruce-faraday.jpg";
 import haggai from "@/assets/testimonials/haggai.jpg";
 import emmanuelOmbogo from "@/assets/testimonials/emmanuel-ombogo.jpg";
-import davidOmondi from "@/assets/testimonials/david-omondi.jpg";
+import josephWendo from "@/assets/testimonials/joseph-wendo.jpg";
 
 const testimonials = [
   {
@@ -28,11 +28,11 @@ const testimonials = [
     image: emmanuelOmbogo,
   },
   {
-    name: "David Omondi",
-    role: "Product Manager, AppVentures",
-    content: "As a software engineer, Isaac built our mobile app from scratch with clean, scalable code. He's not just technically skilled—he understands user experience and design. A true full-stack creative professional.",
+    name: "Joseph Wendo",
+    role: "Nayolites Production Empire",
+    content: "Isaac's creative vision and technical expertise transformed our production workflow. His innovative approach and dedication to quality consistently deliver outstanding results that exceed expectations.",
     rating: 5,
-    image: davidOmondi,
+    image: josephWendo,
   },
 ];
 
