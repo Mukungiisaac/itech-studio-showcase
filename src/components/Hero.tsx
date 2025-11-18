@@ -31,10 +31,10 @@ const Hero = () => {
         <div className="space-y-8 animate-fade-in">
           <div className="space-y-4">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Your Premier Destination
+              Transforming Ideas into
             </h1>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              for <span className="text-primary">Quality Content</span>
+              <span className="text-primary">Digital Excellence</span>
             </h1>
           </div>
           
