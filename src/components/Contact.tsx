@@ -6,6 +6,14 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, Linkedin, Twitter, Github } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
+  email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
+  subject: z.string().trim().min(1, "Subject is required").max(200, "Subject must be less than 200 characters"),
+  message: z.string().trim().min(1, "Message is required").max(5000, "Message must be less than 5000 characters")
+});
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,12 +26,27 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate form data
+    const validation = contactSchema.safeParse(formData);
+    if (!validation.success) {
+      const errors = validation.error.errors.map(err => err.message).join(", ");
+      toast.error(errors);
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
+      const validatedData = validation.data;
       const { error } = await supabase
         .from('contacts')
-        .insert([formData]);
+        .insert([{
+          name: validatedData.name,
+          email: validatedData.email,
+          subject: validatedData.subject,
+          message: validatedData.message
+        }]);
 
       if (error) throw error;
 
@@ -57,6 +80,7 @@ const Contact = () => {
                     className="h-12"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    maxLength={100}
                   />
                 </div>
                 <div>
@@ -67,6 +91,7 @@ const Contact = () => {
                     className="h-12"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    maxLength={255}
                   />
                 </div>
                 <div>
@@ -76,6 +101,7 @@ const Contact = () => {
                     className="h-12"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                    maxLength={200}
                   />
                 </div>
                 <div>
@@ -85,6 +111,7 @@ const Contact = () => {
                     className="min-h-[150px] resize-none"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    maxLength={5000}
                   />
                 </div>
                 <Button type="submit" size="lg" className="w-full hero-cta h-12 text-base" disabled={isSubmitting}>
