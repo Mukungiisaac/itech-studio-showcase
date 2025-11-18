@@ -7,7 +7,7 @@ import davidOmondi from "@/assets/testimonials/david-omondi.jpg";
 
 const testimonials = [
   {
-    name: "Haggai",
+    name: "Haggai Osundwa",
     role: "De_Halo Creatives",
     content: "Working with Izooh on our digital marketing campaigns was a game-changer. The social media strategy he crafted tripled our engagement and the content he created consistently went viral. Highly recommend!",
     rating: 5,
