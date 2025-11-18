@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/isaac-photo-1.png";
+import heroBg from "@/assets/hero-mic.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -13,10 +13,10 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10">
         <img 
           src={heroBg} 
-          alt="Isaac Mukungi - Professional Photo" 
+          alt="Creative Studio Setup - Microphone" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-background/90 backdrop-blur-md" />
       </div>
 
       {/* Large Text Overlay */}
