@@ -1,17 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import bruceFaraday from "@/assets/testimonials/bruce-faraday.jpg";
-import michaelChen from "@/assets/testimonials/michael-chen.jpg";
+import haggai from "@/assets/testimonials/haggai.jpg";
 import emilyRodriguez from "@/assets/testimonials/emily-rodriguez.jpg";
 import davidOmondi from "@/assets/testimonials/david-omondi.jpg";
 
 const testimonials = [
   {
-    name: "Michael Chen",
-    role: "Marketing Director, GrowthCo",
+    name: "Haggai",
+    role: "De_Hal0 Creatives",
     content: "Working with Izooh on our digital marketing campaigns was a game-changer. The social media strategy he crafted tripled our engagement and the content he created consistently went viral. Highly recommend!",
     rating: 5,
-    image: michaelChen,
+    image: haggai,
   },
   {
     name: "Bruce Faraday",
