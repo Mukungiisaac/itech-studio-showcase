@@ -8,28 +8,28 @@ import josephWendo from "@/assets/testimonials/joseph-wendo.jpg";
 const testimonials = [
   {
     name: "Haggai Osundwa",
-    role: "De_Halo Creatives",
+    role: "CEO, De_Halo Creatives",
     content: "Working with Izooh on our digital marketing campaigns was a game-changer. The social media strategy he crafted tripled our engagement and the content he created consistently went viral. Highly recommend!",
     rating: 5,
     image: haggai,
   },
   {
     name: "Bruce Faraday",
-    role: "Bcore Marketing Pro",
+    role: "CEO, Bcore Marketing Pro",
     content: "Isaac's marketing expertise transformed our brand visibility. His strategic campaigns and creative content drove exceptional results, increasing our reach by 200%. A true marketing professional who delivers measurable impact.",
     rating: 5,
     image: bruceFaraday,
   },
   {
     name: "Emmanuel Ombogo",
-    role: "Graphivio Studios",
+    role: "CEO, Graphivio Studios",
     content: "Isaac's design work is exceptional. His creative approach and attention to detail brought our vision to life. The quality and professionalism he brings to every project is outstanding.",
     rating: 5,
     image: emmanuelOmbogo,
   },
   {
     name: "Joseph Wendo",
-    role: "Nayolites Production Empire",
+    role: "Product Manager, Nayolites Production Empire",
     content: "Isaac's creative vision and technical expertise transformed our production workflow. His innovative approach and dedication to quality consistently deliver outstanding results that exceed expectations.",
     rating: 5,
     image: josephWendo,
