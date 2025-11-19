@@ -136,13 +136,13 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <Tabs defaultValue="design" className="w-full animate-slide-up opacity-0" style={{ animationDelay: "0.2s" }}>
+        <Tabs defaultValue="eventmc" className="w-full animate-slide-up opacity-0" style={{ animationDelay: "0.2s" }}>
           <TabsList className="grid w-full max-w-5xl mx-auto grid-cols-2 md:grid-cols-5 gap-2 mb-12 h-auto md:h-14 p-2">
+            <TabsTrigger value="eventmc" className="text-sm md:text-base">Event MC</TabsTrigger>
             <TabsTrigger value="design" className="text-sm md:text-base">Design</TabsTrigger>
             <TabsTrigger value="marketing" className="text-sm md:text-base">Marketing</TabsTrigger>
             <TabsTrigger value="software" className="text-sm md:text-base">Software</TabsTrigger>
             <TabsTrigger value="content" className="text-sm md:text-base">Content Creation</TabsTrigger>
-            <TabsTrigger value="eventmc" className="text-sm md:text-base">Event MC</TabsTrigger>
           </TabsList>
 
           {Object.entries(portfolioItems).map(([key, items]) => (
