@@ -7,10 +7,12 @@ import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import AnimatedBubbles from "@/components/AnimatedBubbles";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <AnimatedBubbles />
       <Navigation />
       <Hero />
       <About />
