@@ -92,7 +92,9 @@ const Footer = () => {
                   <Github className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.tiktok.com/@izooh_015?_r=1&_t=ZM-91YY238caDI" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label="TikTok"
                 >
