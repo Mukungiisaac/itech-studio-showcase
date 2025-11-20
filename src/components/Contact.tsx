@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, Linkedin, Twitter, Github } from "lucide-react";
+import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
@@ -155,12 +156,12 @@ const Contact = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://twitter.com" 
+                    href="https://tiktok.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 rounded-lg bg-accent/10 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
                   >
-                    <Twitter className="h-5 w-5" />
+                    <SiTiktok className="h-5 w-5" />
                   </a>
                   <a 
                     href="https://github.com" 
