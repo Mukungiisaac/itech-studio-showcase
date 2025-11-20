@@ -156,7 +156,7 @@ const Contact = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a 
-                    href="https://tiktok.com" 
+                    href="https://www.tiktok.com/@izooh_015?_r=1&_t=ZM-91YY238caDI" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="p-3 rounded-lg bg-accent/10 hover:bg-accent hover:text-accent-foreground transition-all duration-300"
