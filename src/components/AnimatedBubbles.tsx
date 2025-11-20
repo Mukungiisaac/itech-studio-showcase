@@ -12,7 +12,7 @@ const AnimatedBubbles = () => {
       {bubbles.map((bubble) => (
         <div
           key={bubble.id}
-          className="absolute rounded-full bg-primary/50 border-2 border-primary/60 backdrop-blur-sm animate-float"
+          className="absolute rounded-full bg-primary/20 border border-primary/30 backdrop-blur-sm animate-float"
           style={{
             width: `${bubble.size}px`,
             height: `${bubble.size}px`,
