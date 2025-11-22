@@ -42,23 +42,12 @@ const Auth = () => {
         if (error) throw error;
       } else {
         const redirectUrl = `${window.location.origin}/`;
-        const { data, error } = await supabase.auth.signUp({
+        const { error } = await supabase.auth.signUp({
           email,
           password,
           options: { emailRedirectTo: redirectUrl }
         });
         if (error) throw error;
-        
-        // Assign admin role if this is the admin email
-        if (data.user && email === 'itechstudios86@gmail.com') {
-          const { error: roleError } = await supabase
-            .from('user_roles')
-            .insert({ user_id: data.user.id, role: 'admin' });
-          
-          if (roleError) {
-            console.error('Error assigning admin role:', roleError);
-          }
-        }
         
         toast({
           title: "Account created!",

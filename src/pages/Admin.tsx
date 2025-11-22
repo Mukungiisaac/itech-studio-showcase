@@ -40,11 +40,26 @@ const Admin = () => {
     if (session.user.email !== 'itechstudios86@gmail.com') {
       toast({
         title: "Access Denied",
-        description: "You don't have admin privileges.",
+        description: "You don't have permission to access this page.",
         variant: "destructive"
       });
       navigate("/");
       return;
+    }
+
+    // Ensure admin role exists in database for this user
+    const { data: existingRole } = await supabase
+      .from('user_roles')
+      .select('*')
+      .eq('user_id', session.user.id)
+      .eq('role', 'admin')
+      .maybeSingle();
+
+    if (!existingRole) {
+      // Create admin role for this user
+      await supabase
+        .from('user_roles')
+        .insert({ user_id: session.user.id, role: 'admin' });
     }
 
     setIsAdmin(true);
