@@ -1,13 +1,45 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
 import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const checkAdmin = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user?.email === "itechstudios86@gmail.com") {
+        setIsAdmin(true);
+      }
+    };
+
+    checkAdmin();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      async (event, session) => {
+        if (session?.user?.email === "itechstudios86@gmail.com") {
+          setIsAdmin(true);
+        } else {
+          setIsAdmin(false);
+        }
+      }
+    );
+
+    return () => subscription.unsubscribe();
+  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false);
+  };
+
+  const handleAdminClick = () => {
+    navigate("/admin");
     setIsOpen(false);
   };
 
@@ -48,6 +80,14 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            {isAdmin && (
+              <button
+                onClick={handleAdminClick}
+                className="text-sm font-medium transition-colors hover:text-primary text-foreground"
+              >
+                Admin
+              </button>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -79,6 +119,14 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            {isAdmin && (
+              <button
+                onClick={handleAdminClick}
+                className="block w-full text-left py-2 text-sm font-medium transition-colors hover:text-primary text-foreground"
+              >
+                Admin
+              </button>
+            )}
           </div>
         </div>
       )}
