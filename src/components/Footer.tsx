@@ -1,8 +1,10 @@
 import { Mail, Phone, Linkedin, Github } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate();
 
   return (
     <footer className="bg-muted border-t border-border shadow-2xl">
@@ -118,6 +120,12 @@ const Footer = () => {
               <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Terms of Service
               </a>
+              <button 
+                onClick={() => navigate("/auth")}
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              >
+                Admin Login
+              </button>
             </div>
           </div>
         </div>
