@@ -41,6 +41,11 @@ const Auth = () => {
         const { error } = await supabase.auth.signInWithPassword({ email, password });
         if (error) throw error;
       } else {
+        // Only allow admin email to sign up
+        if (email !== 'itechstudios86@gmail.com') {
+          throw new Error('Signups are restricted. Only authorized users can create accounts.');
+        }
+        
         const redirectUrl = `${window.location.origin}/`;
         const { error } = await supabase.auth.signUp({
           email,
