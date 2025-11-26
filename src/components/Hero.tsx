@@ -29,14 +29,10 @@ const Hero = () => {
       {/* Content */}
       <div className="max-w-4xl mx-auto px-6 w-full py-20 text-center">
         <div className="space-y-8 animate-fade-in">
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Transforming Ideas into
-            </h1>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              <span className="text-primary">Digital Excellence</span>
-            </h1>
-          </div>
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight space-y-2">
+            <span className="block">Transforming Ideas into</span>
+            <span className="block text-primary">Digital Excellence</span>
+          </h1>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Where creativity meets professionalism, and ideas don't buffer.
