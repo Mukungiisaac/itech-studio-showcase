@@ -99,9 +99,16 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: none;
+  }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "liga" 1, "calt" 1;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
