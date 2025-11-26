@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Instagram } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 
@@ -80,18 +80,13 @@ const Footer = () => {
               </a>
               <div className="flex gap-4 pt-2">
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/izooh_015?igsh=YzljYTk1ODg3Zg==" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label="LinkedIn"
+                  aria-label="Instagram"
                 >
-                  <Linkedin className="h-5 w-5" />
-                </a>
-                <a 
-                  href="#" 
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label="GitHub"
-                >
-                  <Github className="h-5 w-5" />
+                  <Instagram className="h-5 w-5" />
                 </a>
                 <a 
                   href="https://www.tiktok.com/@izooh_015?_r=1&_t=ZM-91YY238caDI" 
